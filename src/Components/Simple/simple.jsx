@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect } from "react";
 
 const Simple = () => {
-    return <div>Hello Dupa</div>
-}
+  useEffect(() => {
+    // Zaktualizuj tytuł dokumentu korzystając z interfejsu API przeglądarki
+    console.log("mount");
+  }, []);
+  
+  return (
+    <>
+      <div>Hello Dupa</div>
+    </>
+  );
+};
 
 export default Simple;
